@@ -704,3 +704,13 @@ Stack Trace:
 #10 /var/www/html/tabelog_clone/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ReviewsController), Object(CakeRequest))
 #11 /var/www/html/tabelog_clone/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2016-07-15 08:04:28 Error: Fatal Error (4): syntax error, unexpected ''pass'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in [/var/www/html/tabelog_clone/app/Config/routes.php, line 34]
+2016-07-15 08:04:28 Error: [FatalErrorException] syntax error, unexpected ''pass'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /tabelog_clone/
+Stack Trace:
+#0 /var/www/html/tabelog_clone/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/t...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/t...', 34, Array)
+#2 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/t...', 34, Array)
+#3 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

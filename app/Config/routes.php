@@ -26,6 +26,14 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', ['controller' => 'shops', 'action' => 'index']);
+
+	Router::connect('/shops/:shop_id/reviews',
+		['controller' => 'reviews', 'action' => 'edit'],
+		[
+			'shop_id' => '[0-9]+',
+			'pass' => ['shop_id']
+		]
+	);
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

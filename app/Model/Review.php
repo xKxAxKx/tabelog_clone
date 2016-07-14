@@ -1,6 +1,6 @@
 <?php
 
-class Review extends AppModel{
+class Review extends AppModel {
 
   public $belongsTo = [
     'User' => [
@@ -12,16 +12,16 @@ class Review extends AppModel{
   ];
 
   public $validate = [
-    'title' =>[
+    'title' => [
       'rule' => 'notBlank'
     ],
     'body' => [
-      'rule' => 'notBlnak'
+      'rule' => 'notBlank'
     ],
-    'score' =>[
-      'numeric' =>[
+    'score' => [
+      'numeric' => [
         'rule' => 'numeric',
-        'message' => '数値を入力して下さい'
+        'message' => '数値を入力してください'
       ]
     ]
   ];
