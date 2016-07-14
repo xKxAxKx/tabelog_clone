@@ -9,13 +9,7 @@
 <?= $this->Form->input('score', [
     'label' => '点数',
     'type' => 'select',
-    'options' => [
-            1 => '★☆☆☆☆',
-            2 => '★★☆☆☆',
-            3 => '★★★☆☆',
-            4 => '★★★★☆',
-            5 => '★★★★★',
-        ]
+    'options' => $this->Shop->scoreList()
 ]); ?>
 
 <?= $this->Form->input('title', ['label' => 'タイトル']); ?>

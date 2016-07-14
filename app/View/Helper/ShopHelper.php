@@ -19,5 +19,15 @@ class ShopHelper extends AppHelper{
     return $this->Html->image($path, $options);
   }
 
+  public function scoreList() {
+    return [
+      1 => '★☆☆☆☆',
+      2 => '★★☆☆☆',
+      3 => '★★★☆☆',
+      4 => '★★★★☆',
+      5 => '★★★★★',
+    ];
+  }
+
 
 }
