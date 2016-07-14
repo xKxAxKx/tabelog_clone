@@ -30,6 +30,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		echo $this->Html->css('cake.generic');
 
+		echo $this->Html->css('cake.app.css');
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -37,9 +39,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
+	<!-- navigation -->
+	<?=	$this->element('navbar'); ?>
 		<div id="content">
 
 			<?php echo $this->Flash->render(); ?>
