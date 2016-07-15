@@ -15,6 +15,12 @@ class Shop extends AppModel {
         ]
     ];
 
+    public $hasMany = [
+      'Review' => [
+        'className' => 'Review'
+      ]
+    ];
+
     public $validate = [
         'name' => [
             'rule' => ['notBlank']

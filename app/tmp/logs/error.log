@@ -745,3 +745,14 @@ Stack Trace:
 #1 /var/www/html/tabelog_clone/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ShopsController), Object(CakeRequest))
 #2 /var/www/html/tabelog_clone/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-07-15 08:36:56 Error: [MissingActionException] Action ReviewsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ReviewsController',
+  'action' => 'index',
+)
+Request URL: /tabelog_clone/reviews/
+Stack Trace:
+#0 /var/www/html/tabelog_clone/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/tabelog_clone/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ReviewsController), Object(CakeRequest))
+#2 /var/www/html/tabelog_clone/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
