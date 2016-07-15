@@ -1,6 +1,6 @@
 <div style="width: 100%; height: 80px;">
-    <span style="float: left;"><h2><?= $shop['Shop']['name']; ?></h2></span>
-    <span style="float: right;"><h3><?= $shop['Shop']['tel']; ?></h3></span>
+    <span style="float: left;"><h2><?= h($shop['Shop']['name']); ?></h2></span>
+    <span style="float: right;"><h3><?= h($shop['Shop']['tel']); ?></h3></span>
 </div>
 
 <div>
@@ -12,19 +12,19 @@
                     <?= $this->Shop->photoImage($shop, ['style' => 'width: 100%']); ?>
                 </td>
                 <td style="width: 20%;">店名</td>
-                <td><?= $shop['Shop']['name']; ?></td>
+                <td><?= h($shop['Shop']['name']); ?></td>
             </tr>
             <tr>
                 <td>TEL・予約</td>
-                <td><?= $shop['Shop']['tel']; ?></td>
+                <td><?= h($shop['Shop']['tel']); ?></td>
             </tr>
             <tr>
                 <td>住所</td>
-                <td><?= $shop['Shop']['addr']; ?></td>
+                <td><?= h($shop['Shop']['addr']); ?></td>
             </tr>
             <tr>
                 <td>ホームページ</td>
-                <td><?= $shop['Shop']['url']; ?></td>
+                <td><?= h($shop['Shop']['url']); ?></td>
             </tr>
             <tr>
                 <td>評価</td>
@@ -66,9 +66,9 @@
                 <?php foreach($shop['Review'] as $review): ?>
                 <tr>
                     <td><?= $this->Shop->scoreList()[$review['score']]; ?></td>
-                    <td><?= $review['title']; ?></td>
-                    <td><?= $review['body']; ?></td>
-                    <td><?= $review['User']['email']; ?></td>
+                    <td><?= h($review['title']); ?></td>
+                    <td><?= h($review['body']); ?></td>
+                    <td><?= h($review['User']['email']); ?></td>
                     <td><?= $this->Time->format($review['created'], '%Y/%m/%d'); ?></td>
                 </tr>
                 <?php endforeach; ?>

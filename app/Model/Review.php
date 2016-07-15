@@ -53,6 +53,5 @@ class Review extends AppModel {
     }
 
     return $avg;
-
   }
 }

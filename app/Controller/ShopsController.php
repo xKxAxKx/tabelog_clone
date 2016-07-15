@@ -75,7 +75,7 @@ class ShopsController extends AppController{
     $averageScore = $this->Review->getAvgScoreByShopId($id);
 
     //レストランの情報を取得
-    $this->Shop->recursive = 2;
+    $this->Shop->recursive = 2; //再帰的に取りに行く
     $shop = $this->Shop->findById($id);
 
     //ビューに値を渡す

@@ -19,7 +19,7 @@
       </td>
       <td>
         <?= $this->Html->link(
-          $shop['Shop']['name'],
+          h($shop['Shop']['name']),
           ['action' => 'view', $shop['Shop']['id']]
         ); ?>
       </td>

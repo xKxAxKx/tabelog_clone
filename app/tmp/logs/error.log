@@ -766,3 +766,13 @@ Stack Trace:
 #3 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-07-15 19:32:48 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/html/tabelog_clone/app/Controller/ReviewsController.php, line 46]
+2016-07-15 19:32:48 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /tabelog_clone/shops/1/reviews
+Stack Trace:
+#0 /var/www/html/tabelog_clone/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/t...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/t...', 46, Array)
+#2 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/t...', 46, Array)
+#3 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

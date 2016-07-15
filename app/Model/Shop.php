@@ -18,7 +18,8 @@ class Shop extends AppModel {
     //Reviewへのアソシエーション
     public $hasMany = [
       'Review' => [
-        'className' => 'Review'
+        'className' => 'Review',
+        'dependent' => true //Shopが削除されたらReviewも再帰的に削除する
       ]
     ];
 
