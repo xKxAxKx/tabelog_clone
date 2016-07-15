@@ -15,6 +15,7 @@ class Shop extends AppModel {
         ]
     ];
 
+    //Reviewへのアソシエーション
     public $hasMany = [
       'Review' => [
         'className' => 'Review'

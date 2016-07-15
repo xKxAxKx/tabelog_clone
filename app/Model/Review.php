@@ -37,4 +37,22 @@ class Review extends AppModel {
 
     return $this->find('first', $options);
   }
+
+  public function getAvgScoreByShopId($shopId) {
+    $options = [
+      'fields' => 'AVG(score) as avg',
+      'conditions' => ['shop_id' => $shopId],
+      'group' => ['shop_id']
+    ];
+
+    $data =$this->find('first', $options);
+
+    $avg = 0;
+    if(!empty($data[0]['avg'])) {
+      $avg = round($data[0]['avg'], 1);
+    }
+
+    return $avg;
+
+  }
 }

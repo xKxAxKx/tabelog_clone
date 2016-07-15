@@ -23,6 +23,19 @@
           ['action' => 'view', $shop['Shop']['id']]
         ); ?>
       </td>
+      <td>
+        <?php
+          if ($shop['Shop']['cnt'] > 0) {
+            printf("レビュー: %d 件<br>%s ( %.1f )",
+              $shop['Shop']['cnt'],
+              $this->Shop->scoreList()[round((int)$shop['Shop']['avg'])],
+              $shop['Shop']['avg']
+            );
+          } else {
+            echo 'レビュー: 0 件';
+          }
+        ?>
+      </td>
       <td style="width: 20%;">
         登録日: <?= $this->Time->format($shop['Shop']['created'], '%Y/%m/%d'); ?>
       </td>

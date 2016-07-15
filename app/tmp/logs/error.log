@@ -756,3 +756,13 @@ Stack Trace:
 #1 /var/www/html/tabelog_clone/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ReviewsController), Object(CakeRequest))
 #2 /var/www/html/tabelog_clone/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-07-15 13:08:59 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/tabelog_clone/app/Model/Review.php, line 51]
+2016-07-15 13:08:59 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /tabelog_clone/shops/view/1
+Stack Trace:
+#0 /var/www/html/tabelog_clone/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/t...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/t...', 51, Array)
+#2 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/t...', 51, Array)
+#3 /var/www/html/tabelog_clone/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
