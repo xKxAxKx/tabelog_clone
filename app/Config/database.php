@@ -71,7 +71,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'hiro1031',
+		'password' => 'root',
 		'database' => 'tabelog_clone',
 		'prefix' => '',
 		'encoding' => 'utf8',
